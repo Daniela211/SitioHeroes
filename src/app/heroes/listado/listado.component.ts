@@ -15,8 +15,9 @@ import { Component } from '@angular/core';
 export class ListadoComponent{
 
 
-
+  
   heroes: string [] = ['Hulk', 'Saitama', 'Thor', 'Goku'];
+
 
   heroDeleted = '';
 

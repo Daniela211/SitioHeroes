@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 
 import { ListadoComponent } from './heroes/listado/listado.component';
 
+import { ContadorComponent} from './contador/contador.component';
 
 
 
@@ -24,6 +25,8 @@ AppComponent,
 HeroeComponent,
 
 ListadoComponent,
+
+ContadorComponent,
 
 ],
 
