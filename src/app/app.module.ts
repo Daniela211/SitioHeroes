@@ -14,6 +14,10 @@ import { ListadoComponent } from './heroes/listado/listado.component';
 
 import { ContadorComponent} from './contador/contador.component';
 
+import { VillanoComponent } from './villano/villano.component';
+
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -27,7 +31,7 @@ HeroeComponent,
 ListadoComponent,
 
 ContadorComponent,
-
+VillanoComponent,
 ],
 
 
@@ -36,7 +40,9 @@ imports: [
 
 BrowserModule,
 
-AppRoutingModule
+AppRoutingModule,
+
+FormsModule
 
 ],
 

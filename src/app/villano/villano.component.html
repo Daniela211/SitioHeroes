@@ -1,0 +1,73 @@
+<div class="container">
+
+    <h2 class="title">Mis villanos favoritos</h2>
+    
+    <div class="row">
+    
+    <div class="col">
+    
+    <ul class="villanos">
+    
+    <li *ngFor="let villa of villanos" [class.selectrd]="villa === selectedVillano" 
+    
+    (click)="onSelect(villa)">
+    
+    <span class="badge"> {{villa.id}}</span>{{villa.nombre}} </li>
+    
+    </ul>
+    
+    </div>
+    
+    <div class="col">
+    
+    <div *ngIf="selectedVillano">
+    
+    <h2>{{selectedVillano.nombre | uppercase}} : </h2>
+    
+    <h5><b>
+    
+    <div><span> id: </span> <span class="badge badge-primary">{{selectedVillano.id}} 
+    
+        
+    
+    </span></div>
+    
+    <div>
+    <span>
+    <b><label for="villa-name">  Nombre: </label></b>
+    
+    <input type="text" [(ngModel)]="selectedVillano.nombre" placeholder= "SuperPoder" class="form-control">
+    </span>
+    </div>
+    
+    <div>
+    
+    <label for="villa-Maldad"> Poder: </label>
+    
+    <input type="text" [(ngModel)]="selectedVillano.Maldad" placeholder="SuperPoder" class="form-control" disabled>
+    
+    <button (click)="onPlus(selectedVillano)">Mas maldad</button>
+    
+    </div>
+    
+    
+    
+    <div>
+    
+    <label for="villa-SuperPoder">Su poder: </label>
+    
+    <input type="text" [(ngModel)]="selectedVillano.SuperPoder" placeholder="SuperPoder" class="form-control">
+    
+    </div>
+    
+    </b>
+    
+    </h5>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    </div>
